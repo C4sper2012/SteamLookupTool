@@ -1,0 +1,52 @@
+﻿@page
+@model SteamLookupTool.Pages.UserModel
+@{
+}
+
+<div>
+    <div class="input-group mb-3">
+        <span class="input-group-text" id="basic-addon1">Personaname</span>
+        <a class="form-control" aria-describedby="basic-addon1">@Model.Users.FirstOrDefault().Personaname</a>
+    </div>
+
+    <div class="input-group mb-3">
+        <span class="input-group-text" id="basic-addon1">Last logoff</span>
+        <a class="form-control" aria-describedby="basic-addon1">@Model.Users.FirstOrDefault().Lastlogoff</a>
+    </div>
+
+    <div class="input-group mb-3">
+        <span class="input-group-text" id="basic-addon1">Avatar</span>
+        <a class="form-control" aria-describedby="basic-addon1">@Model.Users.FirstOrDefault().Avatar</a>
+    </div>
+
+    <div class="input-group mb-3">
+        <span class="input-group-text" id="basic-addon1">Time created</span>
+        <a class="form-control" aria-describedby="basic-addon1">@Model.Users.FirstOrDefault().Timecreated</a>
+    </div>
+
+    <div class="input-group mb-3">
+        <span class="input-group-text" id="basic-addon1">Persona State</span>
+        <a class="form-control" aria-describedby="basic-addon1">@Model.Users.FirstOrDefault().Personastate</a>
+    </div>
+
+    <div class="input-group mb-3">
+        <span class="input-group-text" id="basic-addon1">Primaryclan ID</span>
+        <a class="form-control" aria-describedby="basic-addon1">@Model.Users.FirstOrDefault().Primaryclanid</a>
+    </div>
+
+    <div class="input-group mb-3">
+        <span class="input-group-text" id="basic-addon1">Profile State</span>
+        <a class="form-control" aria-describedby="basic-addon1">@Model.Users.FirstOrDefault().Profilestate</a>
+    </div>
+
+    <div class="input-group mb-3">
+        <span class="input-group-text" id="basic-addon1">Community Visibility State</span>
+        <a class="form-control" aria-describedby="basic-addon1">@Model.Users.FirstOrDefault().Communityvisibilitystate</a>
+    </div>
+
+    <div class="input-group mb-3">
+        <span class="input-group-text" id="basic-addon1">Persona State Flags</span>
+        <a class="form-control" aria-describedby="basic-addon1">@Model.Users.FirstOrDefault().Personastateflags</a>
+    </div>
+
+</div>
