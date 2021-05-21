@@ -5,7 +5,48 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Include="obj\Debug\netcoreapp3.1\.NETCoreApp,Version=v3.1.AssemblyAttributes.cs" />
+    <Compile Include="obj\Debug\netcoreapp3.1\SteamLookupLibrary.AssemblyInfo.cs" />
+    <Compile Include="obj\Debug\netcoreapp3.1\SteamLookupToolLibrary.AssemblyInfo.cs" />
+    <Compile Include="obj\Release\netcoreapp3.1\.NETCoreApp,Version=v3.1.AssemblyAttributes.cs" />
+    <Compile Include="obj\Release\netcoreapp3.1\SteamLookupToolLibrary.AssemblyInfo.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="bin\Debug\netcoreapp3.1\SteamLookupToolLibrary.deps.json" />
+    <Content Include="obj\Debug\netcoreapp3.1\SteamLookupToolLibrary.csproj.FileListAbsolute.txt" />
+    <Content Include="obj\project.assets.json" />
+    <Content Include="obj\SteamLookupLibrary.csproj.nuget.dgspec.json" />
+    <Content Include="obj\SteamLookupToolLibrary.csproj.nuget.dgspec.json" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="bin\Debug\netcoreapp3.1\SteamLookupToolLibrary.dll" />
+    <None Include="bin\Debug\netcoreapp3.1\SteamLookupToolLibrary.pdb" />
+    <None Include="obj\Debug\netcoreapp3.1\SteamLookupLibrary.AssemblyInfoInputs.cache" />
+    <None Include="obj\Debug\netcoreapp3.1\SteamLookupLibrary.assets.cache" />
+    <None Include="obj\Debug\netcoreapp3.1\SteamLookupLibrary.csprojAssemblyReference.cache" />
+    <None Include="obj\Debug\netcoreapp3.1\SteamLookupToolLibrary.AssemblyInfoInputs.cache" />
+    <None Include="obj\Debug\netcoreapp3.1\SteamLookupToolLibrary.assets.cache" />
+    <None Include="obj\Debug\netcoreapp3.1\SteamLookupToolLibrary.csproj.CoreCompileInputs.cache" />
+    <None Include="obj\Debug\netcoreapp3.1\SteamLookupToolLibrary.csprojAssemblyReference.cache" />
+    <None Include="obj\Debug\netcoreapp3.1\SteamLookupToolLibrary.dll" />
+    <None Include="obj\Debug\netcoreapp3.1\SteamLookupToolLibrary.pdb" />
+    <None Include="obj\project.nuget.cache" />
+    <None Include="obj\Release\netcoreapp3.1\SteamLookupToolLibrary.AssemblyInfoInputs.cache" />
+    <None Include="obj\Release\netcoreapp3.1\SteamLookupToolLibrary.assets.cache" />
+    <None Include="obj\SteamLookupLibrary.csproj.nuget.g.props" />
+    <None Include="obj\SteamLookupLibrary.csproj.nuget.g.targets" />
+    <None Include="obj\SteamLookupToolLibrary.csproj.nuget.g.props" />
+    <None Include="obj\SteamLookupToolLibrary.csproj.nuget.g.targets" />
+  </ItemGroup>
+
+  <ItemGroup>
     <PackageReference Include="Newtonsoft.Json" Version="13.0.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="bin\Release\netcoreapp3.1\" />
   </ItemGroup>
 
 </Project>

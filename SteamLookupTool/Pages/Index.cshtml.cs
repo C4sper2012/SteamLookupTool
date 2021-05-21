@@ -1,9 +1,7 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using Microsoft.Extensions.Logging;
-using Newtonsoft.Json;
-using SteamLookupToolLibrary.Models;
-using System.Net;
+using SteamLookupToolModels.Models;
 
 namespace SteamLookupTool.Pages
 {

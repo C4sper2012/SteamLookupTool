@@ -1,8 +1,7 @@
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using Newtonsoft.Json;
-using SteamLookupToolLibrary.Models;
-using SteamLookupToolLibrary.Models.Enums;
+using SteamLookupToolModels.Models;
 using System;
 using System.Collections.Generic;
 using System.Net;
