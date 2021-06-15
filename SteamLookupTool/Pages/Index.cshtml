@@ -5,21 +5,18 @@
 }
 
 
-<div id="apiForm" class="bg-light p-5">
+<div id="apiForm" class="p-5">
     <h1 class="text-center display-4 mb-4">SteamLookupTool</h1>
     <form method="post">
-        <div>
-            <div class="input-group mb-3">
-                <span class="input-group-text" id="basic-addon1">@@</span>
-                <input type="text" asp-for="@Model.Key" class="form-control" placeholder="API-Key" aria-describedby="basic-addon1">
+            <div class="mb-3">
+                <label class="form-label">API Token</label>
+                <input type="text" asp-for="@Model.Key" class="form-control" placeholder="API Token" >
             </div>
-            <div class="input-group mb-3">
-                <span class="input-group-text" id="basic-addon1">@@</span>
-                <input type="text" asp-for="@Model.User.Personaname" class="form-control" placeholder="Username" aria-describedby="basic-addon1">
+            <div class="mb-3">
+                <label class="form-label">Steam 64 ID</label>
+                <input type="text" asp-for="@Model.User.Personaname" class="form-control" placeholder="Steam64" aria-describedby="basic-addon1">
             </div>
-        </div>
-        <div class="text-center pr-5 pl-5">
-            <button class="btn btn-outline-primary" type="submit">Search</button>
-        </div>
+            <button type="submit" class="btn btn-success">Submit</button>
     </form>
 </div>
+
