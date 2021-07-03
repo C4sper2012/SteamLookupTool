@@ -1,43 +1,40 @@
 ﻿@page
 @model SteamLookupTool.Pages.UserModel
 @{
+    ViewData["Title"] = @Model.Users.FirstOrDefault().Personaname;
 }
 
 <div class="row">
     <div class="col-md-6">
-        <label for="inputEmail4" class="form-label">Email</label>
-        <a class="form-control" aria-describedby="basic-addon1">@Model.Users.FirstOrDefault().Personaname</a>
+        <label for="inputEmail4" class="form-label">Username</label>
+        <a class="form-control">@Model.Users.FirstOrDefault().Personaname</a>
     </div>
     <div class="col-md-6">
-        <label for="inputPassword4" class="form-label">Password</label>
-        <a class="form-control" aria-describedby="basic-addon1">@Model.Users.FirstOrDefault().Lastlogoff</a>
+        <label for="inputPassword4" class="form-label">Creation Date</label>
+        <a class="form-control">@Model.Users.FirstOrDefault().Timecreated</a>
     </div>
     <div class="col-12">
-        <label for="inputAddress" class="form-label">Address</label>
-        <a class="form-control" aria-describedby="basic-addon1">@Model.Users.FirstOrDefault().Avatar</a>
-    </div>
-    <div class="col-12">
-        <label for="inputAddress2" class="form-label">Address 2</label>
-        <a class="form-control" aria-describedby="basic-addon1">@Model.Users.FirstOrDefault().Timecreated</a>
+        <label for="inputAddress" class="form-label">Avatar URL</label>
+        <a class="form-control">@Model.Users.FirstOrDefault().Avatar</a>
     </div>
     <div class="col-md-6">
-        <label for="inputCity" class="form-label">City</label>
-        <a class="form-control" aria-describedby="basic-addon1">@Model.Users.FirstOrDefault().Personastate</a>
+        <label for="inputCity" class="form-label">Status</label>
+        <a class="form-control">@Model.Users.FirstOrDefault().Personastate</a>
     </div>
-    <div class="col-md-2">
-        <label for="inputZip" class="form-label">Zip</label>
-        <a class="form-control" aria-describedby="basic-addon1">@Model.Users.FirstOrDefault().Primaryclanid</a>
+    <div class="col-md-3">
+        <label for="inputZip" class="form-label">Primary Clan-ID</label>
+        <a class="form-control">@Model.Users.FirstOrDefault().Primaryclanid</a>
     </div>
-    <div class="col-md-2">
-        <label for="inputZip" class="form-label">Zip</label>
-        <a class="form-control" aria-describedby="basic-addon1">@Model.Users.FirstOrDefault().Profilestate</a>
+    <div class="col-md-3">
+        <label for="inputZip" class="form-label">Profilestate</label>
+        <a class="form-control">@Model.Users.FirstOrDefault().Profilestate</a>
     </div>
-    <div class="col-md-2">
-        <label for="inputZip" class="form-label">Zip</label>
-        <a class="form-control" aria-describedby="basic-addon1">@Model.Users.FirstOrDefault().Communityvisibilitystate</a>
+    <div class="col-md-3">
+        <label for="inputZip" class="form-label">Communityvisibilitystate</label>
+        <a class="form-control">@Model.Users.FirstOrDefault().Communityvisibilitystate</a>
     </div>
-    <div class="col-md-2">
-        <label for="inputZip" class="form-label">Zip</label>
-        <a class="form-control" aria-describedby="basic-addon1">@Model.Users.FirstOrDefault().Personastateflags</a>
+    <div class="col-md-3">
+        <label for="inputZip" class="form-label">Personastate</label>
+        <a class="form-control">@Model.Users.FirstOrDefault().Personastateflags</a>
     </div>
 </div>
