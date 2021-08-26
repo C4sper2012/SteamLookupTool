@@ -12,7 +12,7 @@ namespace SteamLookupTool.Pages
         [BindProperty]
         public string Key { get; set; }
         [BindProperty]
-        public User User { get; set; }
+        public UserModel User { get; set; }
 
         public IndexModel(ILogger<IndexModel> logger)
         {
@@ -22,7 +22,7 @@ namespace SteamLookupTool.Pages
         [HttpGet]
         public void OnGet()
         {
-            User = new User();
+            User = new UserModel();
         }
 
         [HttpPost]
@@ -30,7 +30,7 @@ namespace SteamLookupTool.Pages
         {
             Response.Cookies.Append("key", Key);
             Response.Cookies.Append("user", User.Personaname);
-            return RedirectToPage("User");
+            return RedirectToPage("User/Details");
         }
     }
 }

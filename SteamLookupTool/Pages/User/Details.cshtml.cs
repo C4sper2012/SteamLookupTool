@@ -6,16 +6,15 @@ using System;
 using System.Collections.Generic;
 using System.Net;
 
-namespace SteamLookupTool.Pages
+namespace SteamLookupTool.Pages.User
 {
-    public class UserModel : PageModel
+    public class DetailsModel : PageModel
     {
         [BindProperty]
         public string Key { get; set; }
         private Root ReponseUsers { get; set; }
-        public List<User> Users { get; set; }
+        public List<UserModel> Users { get; set; }
 
-        [HttpGet]
         public void OnGet()
         {
             Key = Request.Cookies["key"];
@@ -30,11 +29,10 @@ namespace SteamLookupTool.Pages
 
         private void SetupUserDates()
         {
-            foreach (User user in Users)
+            foreach (UserModel user in Users)
             {
                 user.Timecreated = new DateTime(1970, 1, 1).AddSeconds(Convert.ToDouble(user.Timecreated)).ToString();
                 user.Lastlogoff = new DateTime(1970, 1, 1).AddSeconds(Convert.ToDouble(user.Lastlogoff)).ToString();
-
             }
         }
     }

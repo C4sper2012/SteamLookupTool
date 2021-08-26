@@ -4,7 +4,7 @@ using System.Collections.Generic;
 
 namespace SteamLookupToolModels.Models
 {
-    public class User
+    public class UserModel
     {
         [JsonProperty("steamid")]
         public string Steamid { get; set; }
@@ -61,7 +61,7 @@ namespace SteamLookupToolModels.Models
     public class Response
     {
         [JsonProperty("players")]
-        public List<User> Users { get; set; }
+        public List<UserModel> Users { get; set; }
     }
 
     public class Root
